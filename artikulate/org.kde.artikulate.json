@@ -25,8 +25,9 @@
             "buildsystem": "cmake",
             "sources": [
                 {
-                    "type": "git", 
-                    "url": "git://anongit.freedesktop.org/gstreamer/qt-gstreamer"
+                    "type": "archive", 
+                    "url": "https://gstreamer.freedesktop.org/src/qt-gstreamer/qt-gstreamer-1.2.0.tar.xz",
+                    "sha256": "9f3b492b74cad9be918e4c4db96df48dab9c012f2ae5667f438b64a4d92e8fd4"
                 } 
             ]
         },
