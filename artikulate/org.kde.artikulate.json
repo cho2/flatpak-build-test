@@ -35,9 +35,10 @@
             "buildsystem": "cmake-ninja",
             "sources": [
                 { 
-                    "type": "git",
-                    "url": "https://anongit.kde.org/artikulate.git"
-                }
+                    "type": "archive", 
+                    "url": "https://download.kde.org/stable/release-service/20.08.3/src/artikulate-20.08.3.tar.xz",
+                    "sha256": "29741146968f91bcfa9afaf6c4c9332681f76d55f8bc513fadf2c46f223ea92f"
+                },
             ]
         }
     ]
