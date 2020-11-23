@@ -1,0 +1,43 @@
+{
+    "id": "org.kde.kalgebra",
+    "branch": "master",
+    "runtime": "org.kde.Platform",
+    "runtime-version": "5.15",
+    "sdk": "org.kde.Sdk",
+    "base": "io.qt.qtwebengine.BaseApp",
+    "base-version": "5.15",
+    "command": "kalgebra",
+    "rename-icon": "kalgebra",
+    "finish-args": [
+        "--share=ipc",
+        "--socket=x11",
+        "--socket=wayland",
+        "--device=dri"
+    ],
+    "separate-locales": false,
+
+    "modules": [
+        {
+            "name": "analitza",
+            "buildsystem": "cmake-ninja",
+            "sources": [
+                {
+                    "type": "archive", 
+                    "url": "https://download.kde.org/stable/release-service/20.08.3/src/analitza-20.08.3.tar.xz",
+                    "sha256": "2045657dd16e3f73e3e5e67a7db6cd36c072a85e7957f411a6e348cabc9c469b"
+                }
+            ]
+        },
+        {
+            "name": "kalgebra",
+            "buildsystem": "cmake-ninja",
+            "sources": [
+                {
+                    "type": "arhive", 
+                    "url": "https://download.kde.org/stable/release-service/20.08.3/src/kalgebra-20.08.3.tar.xz",
+                    "sha256": "0c9490bb15dd22226469dc3d00457987bb3f1c332fd16e24323cd358688cf54c"
+                }
+            ]
+        }
+    ]
+}
