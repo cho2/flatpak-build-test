@@ -13,7 +13,50 @@
     ],
 
     "modules": [
-	"poppler.json",
+    {
+        "name": "poppler",
+        "config-opts": [
+            "-DENABLE_TESTING=OFF",
+            "-DENABLE_UNSTABLE_API_ABI_HEADERS=ON",
+            "-DENABLE_CPP=OFF",
+            "-DENABLE_GLIB=OFF",
+            "-DENABLE_GOBJECT_INTROSPECTION=OFF",
+            "-DENABLE_UTILS=OFF"
+        ],
+        "buildsystem": "cmake-ninja",
+        "builddir": true,
+        "sources": [
+            { 
+                "type": "archive", 
+                "url": "https://poppler.freedesktop.org/poppler-20.11.0.tar.xz", 
+                "sha256": "021557074516492375c2bb4226a413aad431159e9177f9f14dff4159d2723b14"
+            } 
+        ],
+        "modules": [
+            {
+                "name": "openjpeg2",
+                "buildsystem": "cmake-ninja",
+                "builddir": true,
+                "sources": [
+                    {
+                        "type": "archive",
+                        "url": "https://github.com/uclouvain/openjpeg/releases/download/v2.3.1/openjpeg-v2.3.1-linux-x86_64.tar.gz",
+                        "sha256": "a3477a0c51b5ae1b8df8c98ff64848cdb1363094089ddf5c113a9ba10a098580"
+                    }
+                ],
+                "cleanup": [
+                    "/bin", 
+                    "/include", 
+                    "/lib/openjpeg-*", 
+                    "/lib/pkgconfig"
+                ]
+            }
+        ],
+        "cleanup": [
+            "/include",
+            "/lib/pkgconfig"
+        ]
+    },        
     {
         "name": "analitza",
         "buildsystem": "cmake-ninja",
