@@ -7,7 +7,6 @@
     "base": "io.qt.qtwebengine.BaseApp",
     "base-version": "5.15",
     "command": "kalgebra",
-    "rename-icon": "kalgebra",
     "finish-args": [
         "--share=ipc",
         "--socket=x11",
