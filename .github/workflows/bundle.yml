@@ -15,5 +15,5 @@ jobs:
     - uses: bilelmoussaoui/flatpak-github-actions@v2
       with:
         bundle: "artikulate.flatpak"
-        manifest-path: "artikulate/org.kde.artikulate.json"
+        manifest-path: "cantor/org.kde.cantor.json"
 

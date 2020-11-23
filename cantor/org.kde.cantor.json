@@ -1,0 +1,40 @@
+{
+    "id": "org.kde.cantor",
+    "runtime": "org.kde.Platform",
+    "runtime-version": "5.15",
+    "sdk": "org.kde.Sdk",
+    "command": "cantor",
+    "rename-icon": "cantor",
+    "finish-args": [
+        "--share=network",
+        "--share=ipc",
+        "--socket=x11",
+        "--socket=wayland"
+    ],
+
+    "modules": [
+	"poppler.json",
+    {
+        "name": "analitza",
+        "buildsystem": "cmake-ninja",
+        "sources": [
+            {
+                "type": "archive", 
+                "url": "https://download.kde.org/stable/release-service/20.08.3/src/analitza-20.08.3.tar.xz",
+                "sha256": "2045657dd16e3f73e3e5e67a7db6cd36c072a85e7957f411a6e348cabc9c469b"
+            }
+        ]
+    },
+        {
+            "name": "cantor",
+            "buildsystem": "cmake-ninja",
+            "sources": [
+                {
+                    "type": "archive", 
+                    "url": "https://download.kde.org/stable/release-service/20.08.3/src/cantor-20.08.3.tar.xz",
+                    "sha256": "14aefe60ca2ff7aeaf7af8080dd00e80be8d747faeb9cd5a2df88f0d3af358da"
+                }
+            ]
+        }
+    ]
+}
