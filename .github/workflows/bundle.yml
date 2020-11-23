@@ -15,5 +15,5 @@ jobs:
     - uses: bilelmoussaoui/flatpak-github-actions@v2
       with:
         bundle: "kalgebra.flatpak"
-        manifest-path: "cantor/org.kde.kalgebra.json"
+        manifest-path: "kalgebra/org.kde.kalgebra.json"
 
