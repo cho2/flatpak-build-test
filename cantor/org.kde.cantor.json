@@ -40,8 +40,8 @@
                 "sources": [
                     {
                         "type": "archive",
-                        "url": "https://github.com/uclouvain/openjpeg/releases/download/v2.3.1/openjpeg-v2.3.1-linux-x86_64.tar.gz",
-                        "sha256": "a3477a0c51b5ae1b8df8c98ff64848cdb1363094089ddf5c113a9ba10a098580"
+                        "url": "https://github.com/uclouvain/openjpeg/archive/v2.3.1.tar.gz",
+                        "sha256": "63f5a4713ecafc86de51bfad89cc07bb788e9bba24ebbf0c4ca637621aadb6a9"
                     }
                 ],
                 "cleanup": [
