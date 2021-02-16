@@ -1,0 +1,28 @@
+{
+    "id": "org.kde.kajongg",
+    "runtime": "org.kde.Platform",
+    "runtime-version": "5.15",
+    "sdk": "org.kde.Sdk",
+    "command": "kajongg",
+    "rename-icon": "kajongg",
+    "finish-args": [
+        "--share=ipc",
+        "--socket=fallback-x11", 
+        "--socket=wayland",
+        "--share=network",
+        "--device=dri",
+    ],
+    "modules": [
+        {
+            "name": "kajongg",
+            "buildsystem": "cmake-ninja",
+            "sources": [
+                { 
+                    "type": "archive", 
+                    "url": "https://download.kde.org/stable/release-service/20.12.2/src/kajongg-20.12.2.tar.xz",
+                    "sha256": "132ffb40a69204011f07ce25be2d8450c380e5b12e61a67aeed692d2c6c2066e"
+                }               
+            ]
+        }
+    ]
+}
