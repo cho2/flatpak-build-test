@@ -6,12 +6,14 @@
     "command": "kajongg",
     "rename-icon": "kajongg",
     "finish-args": [
-        "--share=ipc",
-        "--socket=fallback-x11", 
+        "--share=ipc", 
+        "--socket=x11", 
         "--socket=wayland",
-        "--share=network",
-        "--device=dri"
+        "--device=dri",
+        "--socket=pulseaudio",
+        "--share=network"
     ],
+
     "modules": [
         {
             "name": "libkdegames",
@@ -19,8 +21,8 @@
             "sources": [ 
                 { 
                     "type": "archive", 
-                    "url": "https://download.kde.org/stable/release-service/20.12.2/src/libkdegames-20.12.2.tar.xz",
-                    "sha256": "19d93fe25f1ea5173d5130b2d270038b26e6cc6f09238724f330d05fbe019439"
+                    "url": "https://download.kde.org/stable/release-service/21.08.1/src/libkdegames-21.08.1.tar.xz",
+                    "sha256": "51de56a9f714085ceed2d3200852c1e33b7847768336d02524b07ce3f51cdd6d"
                 } 
             ]
         },
@@ -30,10 +32,11 @@
             "sources": [
                 { 
                     "type": "archive", 
-                    "url": "https://download.kde.org/stable/release-service/20.12.2/src/kajongg-20.12.2.tar.xz",
-                    "sha256": "132ffb40a69204011f07ce25be2d8450c380e5b12e61a67aeed692d2c6c2066e"
-                }               
+                    "url": "https://download.kde.org/stable/release-service/21.08.1/src/kajongg-21.08.1.tar.xz",
+                    "sha256": "4b734beed3ca6710e6d1ea6ac6389730ca7f27247814cdf74fb06f6d8505f5c7" 
+                }                 
             ]
         }
     ]
 }
+
