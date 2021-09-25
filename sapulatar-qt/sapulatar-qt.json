@@ -3,7 +3,7 @@
   "runtime" : "org.kde.Platform",
   "runtime-version" : "5.15",
   "sdk" : "org.kde.Sdk",
-  "command" : "sapulatar-qt",	
+  "command" : "install.sh",	
   "buildsystem": "simple",
   "build-commands": [
     "pip3 install --prefix=/app"
