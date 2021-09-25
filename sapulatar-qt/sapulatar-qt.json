@@ -1,5 +1,9 @@
 {
-  "name": "sapulatar-qt",
+  "app-id" : "com.github.devlover-id.sapulatar-qt",
+  "runtime" : "org.kde.Platform",
+  "runtime-version" : "5.15",
+  "sdk" : "org.kde.Sdk",
+  "command" : "sapulatar-qt",	
   "buildsystem": "simple",
   "build-commands": [
     "pip3 install --prefix=/app"
