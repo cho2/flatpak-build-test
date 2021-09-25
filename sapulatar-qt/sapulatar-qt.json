@@ -1,0 +1,14 @@
+{
+  "name": "sapulatar-qt",
+  "buildsystem": "simple",
+  "build-commands": [
+    "pip3 install --prefix=/app"
+  ],
+  "sources": [
+    {
+      "type": "archive",
+      "url": "https://files.pythonhosted.org/packages/29/e8/f14dc7584c91356165c9385f1cab2be16978784feb9c88bf46027073ec2e/sapulatar-qt-1.0.dev1.tar.gz",
+      "sha256": "712afc330e4685ff09088abd1b71f5c673350e5ef8e08cffce310b9ebff9327e"
+    }
+  ]
+}
