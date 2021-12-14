@@ -14,5 +14,5 @@ jobs:
     - uses: actions/checkout@v2
     - uses: bilelmoussaoui/flatpak-github-actions/flatpak-builder@v4
       with:
-        bundle: sapulatar-qt.flatpak
-        manifest-path: sapulatar-qt/sapulatar-qt.json
+        bundle: peek.flatpak
+        manifest-path: peek/com.uploadedlobster.peek.json
